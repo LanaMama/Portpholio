@@ -5,12 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <section class="hero">
 
+        <header class="header">
+            <div class="header_container">
+                <a href="#" class="header_logo">
+                    <img src="img/Logo.svg" alt="BuildWise" class="header_logo-img">
+                </a>
+                <nav class="header_nav">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-item">
+                            <a href="#" class="header_nav-link header_nav-link_active">Main</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#" class="header_nav-link">Portfolio</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#" class="header_nav-link">Price</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#" class="header_nav-link">Certifications</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#" class="header_nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+447755555764" class="header_phone">
+                    <span class="header_phone-number">(+44) 7755-555-764</span>
+                    <img src="img/phone.svg" alt="" class="header_phone-icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="hero_container">
+            <div class="hero_box">
+                <h1 class="hero_title">Construction <br> services</h1>
+                <p class="hero_desc">
+                    From residential renovations to large-scale commercial projects —
+                    we bring craftsmanship, reliability, and precision to every build.
+                </p>
+                <button class="hero_btn" type="button">Request a free quote</button>
+            </div>
+            <div class="hero_bg">
+                <img src="img/gradient.png" alt="" class="hero_bg-gradient">
+                <img src="img/hero 2.png" alt="" class="hero_bg-img">
+            </div>
+        </div>
+
+    </section>
+    <section class="content">
+        <div class="content_container">
+            <div class="content_left">
+                <h2 class="content_title">About us</h2>
+
+                <p class="content_text">
+                    At BuildWise, we believe every project is more than bricks and mortar — it’s a vision
+                    brought to life. For over 20 years, we’ve been delivering high-quality construction
+                    solutions for homeowners, businesses, and developers.
+                </p><br>
+
+                <p class="content_text">
+                    Our team combines expert craftsmanship, innovative design, and uncompromising safety
+                    standards to ensure every build is done right the first time. From initial planning to the
+                    final walkthrough, we work closely with our clients, keeping communication clear and
+                    expectations aligned.
+                </p><br>
+
+                <p class="content_text">
+                    Our mission is simple: to build spaces that inspire, serve, and last for generations.
+                </p>
+
+                <button class="content_btn">More about us</button>
+            </div>
+
+            <div class="content_right">
+                <img src="img/aboutUs.gpg" alt="House" class="content_img">
+            </div>
+
+        </div>
+    </section>
+    <div class="carousel"
+        data-flickity='{ "freeScroll": true, "contain": true, "pageDots": false, "imagesLoaded": true }'>
+        <div class="carousel-cell"><img src="img/Project card_1.jpg" alt="Project 1" class="carousel-img"></div>
+        <div class="carousel-cell"><img src="img/Project card_2.jpg" alt="Project 2" class="carousel-img"></div>
+        <div class="carousel-cell"><img src="img/Project card_3.jpg" alt="Project 3" class="carousel-img"></div>
+        <div class="carousel-cell"><img src="img/Project card_4.jpg" alt="Project 4" class="carousel-img"></div>
+        <div class="carousel-cell"><img src="img/Project card_5.jpg" alt="Project 5" class="carousel-img"></div>
+        <div class="carousel-cell"><img src="img/Project card_6.jpg" alt="Project 6" class="carousel-img"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
