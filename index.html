@@ -17,30 +17,19 @@
 
     <section class="hero">
 
-        <header class="header">
+        <header class="header center">
             <div class="header_container">
                 <a href="#" class="header_logo">
                     <img src="img/Logo.svg" alt="BuildWise" class="header_logo-img">
                 </a>
-                <nav class="header_nav">
-                    <ul class="header_nav-list">
-                        <li class="header_nav-item">
-                            <a href="#" class="header_nav-link header_nav-link_active">Main</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a href="#" class="header_nav-link">Portfolio</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a href="#" class="header_nav-link">Price</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a href="#" class="header_nav-link">Certifications</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a href="#" class="header_nav-link">Contacts</a>
-                        </li>
-                    </ul>
+                <nav class="header__nav nav">
+                    <a class="nav__link nav__link_active" href="#">Main</a>
+                    <a class="nav__link" href="#">Portfolio</a>
+                    <a class="nav__link" href="#">Price</a>
+                    <a class="nav__link" href="#">Certifications</a>
+                    <a class="nav__link" href="#">Contacts</a>
                 </nav>
+
                 <a href="tel:+447755555764" class="header_phone">
                     <span class="header_phone-number">(+44) 7755-555-764</span>
                     <img src="img/phone.svg" alt="" class="header_phone-icon">
@@ -55,7 +44,7 @@
                     From residential renovations to large-scale commercial projects —
                     we bring craftsmanship, reliability, and precision to every build.
                 </p>
-                <button class="hero_btn" type="button">Request a free quote</button>
+                <button class="button_btn" type="button">Request a free quote</button>
             </div>
             <div class="hero_bg">
                 <img src="img/gradient.png" alt="" class="hero_bg-gradient">
@@ -68,25 +57,24 @@
         <div class="content_container">
             <div class="content_left">
                 <h2 class="content_title">About us</h2>
-
                 <p class="content_text">
                     At BuildWise, we believe every project is more than bricks and mortar — it’s a vision
                     brought to life. For over 20 years, we’ve been delivering high-quality construction
                     solutions for homeowners, businesses, and developers.
-                </p><br>
+                </p>
 
                 <p class="content_text">
                     Our team combines expert craftsmanship, innovative design, and uncompromising safety
                     standards to ensure every build is done right the first time. From initial planning to the
                     final walkthrough, we work closely with our clients, keeping communication clear and
                     expectations aligned.
-                </p><br>
+                </p>
 
                 <p class="content_text">
                     Our mission is simple: to build spaces that inspire, serve, and last for generations.
                 </p>
 
-                <button class="content_btn">More about us</button>
+                <button class="button_btn">More about us</button>
             </div>
 
             <div class="content_right">
@@ -95,30 +83,481 @@
 
         </div>
     </section>
-    <!-- <div class="carousel"
-        data-flickity='{ "freeScroll": true, "contain": true, "pageDots": false, "imagesLoaded": true }'>
-        <div class="carousel-cell"><img src="img/Project card_1.jpg" alt="Project 1" class="carousel-img"></div>
-        <div class="carousel-cell"><img src="img/Project card_2.jpg" alt="Project 2" class="carousel-img"></div>
-        <div class="carousel-cell"><img src="img/Project card_3.jpg" alt="Project 3" class="carousel-img"></div>
-        <div class="carousel-cell"><img src="img/Project card_4.jpg" alt="Project 4" class="carousel-img"></div>
-        <div class="carousel-cell"><img src="img/Project card_5.jpg" alt="Project 5" class="carousel-img"></div>
-        <div class="carousel-cell"><img src="img/Project card_6.jpg" alt="Project 6" class="carousel-img"></div>
-    </div> -->
-    <div class="swiper"> <!-- Главный контейнер Swiper -->
-        <div class="swiper-wrapper"> <!-- Обязательная обертка -->
-            <div class="swiper-slide"><img src="img/Project card_1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Project card_2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Project card_3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Project card_4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Project card_5.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Project card_6.jpg" alt=""></div>
+    <section class="portfolio center padding-tb">
+        <div class="portfolio__top">
+            <h2 class="content_title">
+                Our portfolio
+            </h2>
+            <p class="content_text">
+                From sleek modern homes to large-scale commercial complexes, our projects reflect the skill,
+                precision, and dedication we bring to every build. Each one tells a story of careful planning,
+                expert execution, and lasting quality.
+            </p>
         </div>
-        <!-- Если нужны кнопки или пагинация: -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
+        <div class="portfolio__slider">
+            <button class="portfolio__arrow portfolio__arrow_prev" type="button" aria-label="Previous project">
+                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
+            <ul class="portfolio__list">
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/png/Project card_1.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Metro Office Hub
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                Complete office fit-out for a 10,000 sq ft corporate headquarters.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/png/2.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Metro Office Hub
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                Complete office fit-out for a 10,000 sq ft corporate headquarters.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/png/Project card_3.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Metro Office Hub
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                Complete office fit-out for a 10,000 sq ft corporate headquarters.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+
+            </ul>
+
+            <button class="portfolio__arrow portfolio__arrow_next" type="button" aria-label="Next project">
+                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="portfolio__bottom">
+            <div class="portfolio__pagination">
+                <span class="portfolio__pagination-number">01/02</span>
+                <span class="portfolio__pagination-line">
+                    <span class="portfolio__pagination-progress"></span>
+                </span>
+            </div>
+
+            <button class="button_btn" href="#">
+                <span>View Full Portfolio</span>
+
+                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="certifications_container">
+            <div class="certifications_header">
+                <h2 class="certifications_title">Certifications & credentials</h2>
+                <p class="certifications_text">
+                    We believe great construction starts with strong foundations — not just in buildings, but in
+                    professional standards. Our team holds industry-recognized certifications that ensure your
+                    project
+                    meets the highest levels of safety, quality, and compliance.
+                </p>
+            </div>
+
+            <div class="certifications_grid">
+                <!-- Карточка 1 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">Fully Licensed & Insured</h3>
+                        <p class="cert_card-text">Commitment to quality management in every process.</p>
+                        <div class="cert_card-year">2025</div>
+                    </div>
+                    <div class="cert_card-badge">Winner</div>
+                    <div class="cards_svg">
+                        <img src="img/1.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">ISO 9001:2015 Certified</h3>
+                        <p class="cert_card-text">Commitment to quality management in every process.</p>
+                        <div class="cert_card-year">2023, 2024, 2025</div>
+                    </div>
+                    <div class="cert_card-badge">Winner</div>
+                    <div class="cards_svg">
+                        <img src="img/2.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">OSHA Safety Certified</h3>
+                        <p class="cert_card-text">Ensuring safe practices on every job site.</p>
+                        <div class="cert_card-year">2025</div>
+                    </div>
+                    <div class="cards_svg">
+                        <img src="img/3.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">LEED Accredited Professionals</h3>
+                        <p class="cert_card-text">Expertise in sustainable, eco-friendly building.</p>
+                        <div class="cert_card-year">2025</div>
+                    </div>
+                    <div class="cards_svg">
+                        <img src="img/4.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">Licensed General Contractor</h3>
+                        <p class="cert_card-text">Recognized by industry leaders.</p>
+                        <div class="cert_card-year">2025</div>
+                    </div>
+                    <div class="cards_svg">
+                        <img src="img/5.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="cert_card">
+                    <div class="cert_card-top">
+                        <h3 class="cert_card-title">OSHA Safety Trained</h3>
+                        <p class="cert_card-text">Compliant with all local and national regulations</p>
+                        <div class="cert_card-year">2023, 2024, 2025</div>
+                    </div>
+                    <div class="cert_card-badge">Winner</div>
+                    <div class="cards_svg">
+                        <img src="img/6.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="button_btn" href="#">
+                <span>View Full Portfolio</span>
+
+                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="partners center padding-tb">
+        <div class="partners__top">
+            <h2 class="content_title">
+                Trusted partners
+            </h2>
+
+            <p class="content_text">
+                We believe great construction happens through strong partnerships. Over the years, we’ve teamed up
+                with leading suppliers, architects, and industry organizations to ensure every project gets the best
+                materials, expertise, and technology available.
+            </p>
+        </div>
+
+        <div class="partners__slider">
+            <button class="partners__arrow partners__arrow_prev" type="button" aria-label="Previous partner">
+                <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="partners__swiper swiper">
+                <ul class="partners__list swiper-wrapper">
+                    <li class="partners__item swiper-slide">
+                        <article class="partners-card">
+
+                            <div class="partners-card__image-wrapper">
+                                <img class="partners-card__img" src="img/png/All Partners.png"
+                                    alt="CityPoint Retail Center">
+                                <div class="partners_card">
+                                    <div class="partners-card__overlay">
+                                        <h3 class="partners-card__title">CityPoint Retail Center</h3>
+                                        <p class="partners-card__description">
+                                            From sleek modern homes to large-scale commercial complexes, our projects
+                                            reflect the
+                                            skill, precision, and dedication we bring to every build. Each one tells a
+                                            story
+                                            of careful
+                                            planning, expert execution, and lasting quality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="partners__arrow partners__arrow_next" type="button" aria-label="Next partner">
+                <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="partners__bottom">
+            <div class="partners__pagination">
+                <span class="partners__pagination-number">01/02</span>
+                <span class="partners__pagination-line">
+                    <span class="partners__pagination-progress"></span>
+                </span>
+            </div>
+
+            <button class="button_btn" href="#">
+                <span>View All Partners</span>
+                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="faq center">
+        <div class="faq__container">
+            <!-- Левая колонка (788px) -->
+            <div class="faq__left">
+                <h2 class="faq__title">Frequently asked questions</h2>
+            </div>
+
+            <!-- Правая колонка (828px) -->
+            <div class="faq__right">
+                <div class="accordion">
+                    <!-- Пункт 1 (закрыт, только заголовок) -->
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span class="accordion__title">What types of construction projects do you handle?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                We handle a wide range of projects including residential renovations, commercial
+                                buildings, industrial facilities, and custom homes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Пункт 2 (открыт по умолчанию, с подтекстом) -->
+                    <div class="accordion__item accordion__item_active">
+                        <button class="accordion__header">
+                            <span class="accordion__title">How long will my project take?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Project timelines vary depending on scope and complexity. We'll provide a detailed
+                                schedule after our initial consultation and keep you updated at every stage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Пункт 3 (закрыт) -->
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span class="accordion__title">Do you provide cost estimates before starting?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Yes, we provide detailed cost estimates before any work begins. All estimates are
+                                transparent and include materials, labor, and timeline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Пункт 4 (закрыт) -->
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span class="accordion__title">Are you licensed and insured?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Yes, we are fully licensed and insured. All our certifications are available upon
+                                request.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Пункт 5 (закрыт) -->
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span class="accordion__title">Can you work with my own architect or designer?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Absolutely. We collaborate with your chosen architect or designer to bring your vision
+                                to life.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Пункт 6 (закрыт) -->
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span class="accordion__title">Do you offer eco-friendly building options?</span>
+                            <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Yes, we offer sustainable and eco-friendly building options including energy-efficient
+                                materials, green roofing, and solar-ready designs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta center">
+        <div class="cta__container ">
+            <!-- Левая колонка -->
+            <div class="cta__left">
+                <h2 class="cta__title">Start your project today!</h2>
+
+                <p class="cta__text">
+                    Tell us about your construction needs, and our team will get back to you with a detailed proposal.
+                </p>
+
+                <p class="cta__text">
+                    Once we receive your application, one of our project managers will contact you within 24 hours to
+                    discuss your goals, budget, and next steps.
+                </p>
+
+                <!-- Поле ввода телефона -->
+                <div class="cta__action-row">
+                    <input type="tel" class="cta__input" placeholder="Phone Number">
+
+                    <button class="cta__button">Submit</button>
+                </div>
+                <p class="cta__note">
+                    By clicking on the button, you agree to the privacy policy and give consent to the processing of
+                    your personal data.
+                </p>
+            </div>
+
+
+            <!-- Правая колонка -->
+            <div class="cta__right">
+                <img src="img/png/Finish_1.png" alt="Construction">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer center">
+        <div class="footer__container">
+            <!-- Левая колонка -->
+            <div class="footer__left">
+                <a href="#" class="footer_logo">
+                    <img src="img/Logo.svg" alt="BuildWise" class="header_logo-img">
+                </a>
+                <div class="footer__copyright">2023 Company</div>
+                <div class="logo">
+                    <a href="#" class="f_logo">
+                        <img src="img/png/Instagram.svg" alt="instagram" class="header_logo-img">
+                    </a>
+                    <a href="#" class="footer">
+                        <img src="img/png/Telegram.svg" alt="instagram" class="header_logo-img">
+                    </a>
+                    <a href="#" class="footer_logo">
+                        <img src="img/png/Twitter.svg" alt="instagram" class="header_logo-img">
+                    </a>
+                    <a href="#" class="header_logo">
+                        <img src="img/png/Facebook.svg" alt="instagram" class="header_logo-img">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer__nav">
+                <a href="#" class="footer__link">Portfolio</a>
+                <a href="#" class="footer__link">Price</a>
+                <a href="#" class="footer__link">Contacts</a>
+                <a href="#" class="footer__link">Certifications</a>
+            </div>
+
+            <!-- Правая колонка (текст + кнопка) -->
+            <div class="footer__right">
+                <h2 class="footer__title">Tell us about your construction needs</h2>
+                <p class="footer__text">
+                    Once we receive your application, one of our project managers will contact you within
+                    24 hours to discuss your goals, budget, and next steps.
+                </p>
+                <div class="footer__action-row">
+                    <input type="tel" class="footer" placeholder="Phone Number">
+
+                    <button class="footer">Submit</button>
+                </div>
+
+            </div>
+        </div>
+        </footer>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>

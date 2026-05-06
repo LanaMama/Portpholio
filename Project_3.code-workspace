@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Project_3"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../frontend/Lesson_js/lesson_14:04 2"
+		},
+		{
+			"path": "../frontend/Lesson_js/practic_20"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portpholio"
+	}
+}
