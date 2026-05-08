@@ -283,9 +283,6 @@
 
  }
 
-
-
-
  .portfolio__slider {
      position: relative;
      display: flex;
@@ -365,20 +362,12 @@
      right: -32px;
  }
 
-
-
  .portfolio__top {
      display: flex;
      align-items: start;
-     /* не работает wrap ???? */
      flex-wrap: wrap;
-
      justify-content: center;
  }
-
-
-
-
 
  .portfolio__pagination {
      display: flex;
@@ -426,9 +415,6 @@
      margin-top: 0px;
  }
 
-
-
-
  /* ===== CERTIFICATIONS ===== */
  .certifications {
      width: 100%;
@@ -469,7 +455,6 @@
      padding: 24px;
      display: flex;
      flex-direction: column;
-
      position: relative;
  }
 
@@ -1114,11 +1099,9 @@
      flex-wrap: wrap;
  }
 
-
  .footer__nav-row {
      display: flex;
      gap: 86px;
-
  }
 
  .footer__input {
@@ -1168,7 +1151,6 @@
  .footer__button:hover {
      background: #0C3D54;
  }
-
 
 
  .about__content {
