@@ -1428,7 +1428,7 @@
      }
 
      .cert_card {
-         width: calc(50% - 10px);
+         width: calc((100% - 20px) / 2);
          height: auto;
          min-height: 240px;
      }

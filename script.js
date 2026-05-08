@@ -89,3 +89,60 @@
         }
     });
 }());
+
+// ===== СВАЙП ДЛЯ CERTIFICATIONS =====
+(function () {
+    if (!window.matchMedia('(max-width: 430px)').matches) return;
+
+    var grid = document.querySelector('.certifications_grid');
+    var cards = document.querySelectorAll('.cert_card');
+
+    if (!grid || cards.length === 0) return;
+
+    var startX = 0;
+    var isDrag = false;
+
+    grid.addEventListener('touchstart', function (e) {
+        startX = e.touches[0].clientX;
+        isDrag = true;
+    }, { passive: true });
+
+    grid.addEventListener('touchend', function (e) {
+        if (!isDrag) return;
+
+        isDrag = false;
+        var diff = startX - e.changedTouches[0].clientX;
+
+        if (Math.abs(diff) > 40) {
+            // Для горизонтального скролла, просто позволяем скролл
+            // Можно добавить логику для snap, но пока оставим
+        }
+    });
+}());
+
+// ===== ИНИЦИАЛИЗАЦИЯ SWIPER ДЛЯ ПОРТФОЛИО =====
+document.addEventListener('DOMContentLoaded', function () {
+    const portfolioSwiper = new Swiper('.portfolio__slider .swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.portfolio__arrow_next',
+            prevEl: '.portfolio__arrow_prev',
+        },
+        pagination: {
+            el: '.portfolio__pagination',
+            type: 'fraction',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+        },
+    });
+});
+
