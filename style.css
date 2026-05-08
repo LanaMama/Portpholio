@@ -351,7 +351,7 @@
      justify-content: center;
      cursor: pointer;
      border: none;
-     z-index: 10;
+     z-index: 20;
  }
 
  .portfolio__arrow_prev {
@@ -393,20 +393,33 @@
 
  .portfolio__pagination-line {
      display: flex;
-     align-items: center;
      width: 400px;
      height: 2px;
+     border-radius: 2px;
+     overflow: hidden;
  }
 
  .portfolio__pagination-segment {
-     display: block;
-     width: 50%;
-     height: 2px;
+     flex: 1;
+     height: 100%;
      background: #D7DAE2;
+     transition: background 0.25s ease;
  }
 
- .portfolio__pagination-segment_active {
+ .portfolio__pagination-line.page-1 .portfolio__pagination-segment:first-child {
      background: #052838;
+ }
+
+ .portfolio__pagination-line.page-2 .portfolio__pagination-segment:last-child {
+     background: #052838;
+ }
+
+ .portfolio__arrow_prev {
+     left: -32px;
+ }
+
+ .portfolio__arrow_next {
+     right: -32px;
  }
 
 
@@ -604,6 +617,60 @@
      color: #FFFFFF;
      opacity: 0.9;
 
+ }
+
+ .partners__bottom {
+     display: grid;
+     grid-template-columns: 1fr auto;
+     align-items: center;
+     gap: 40px;
+     position: relative;
+     margin-bottom: 40px;
+ }
+
+ .partners__pagination {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     justify-content: center;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .partners__pagination-number {
+     color: #052838;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+ }
+
+ .partners__pagination-line {
+     display: flex;
+     width: 360px;
+     height: 2px;
+     border-radius: 2px;
+     overflow: hidden;
+     background: #D7DAE2;
+ }
+
+ .partners__pagination-segment {
+     flex: 1;
+     height: 100%;
+     background: #D7DAE2;
+     transition: background 0.25s ease;
+ }
+
+ .partners__pagination-line.page-1 .partners__pagination-segment:first-child,
+ .partners__pagination-line.page-2 .partners__pagination-segment:nth-child(2),
+ .partners__pagination-line.page-3 .partners__pagination-segment:last-child {
+     background: #052838;
+ }
+
+ .partners__bottom .portfolio__button {
+     justify-self: end;
  }
 
  .portfolio__bottom {
@@ -1411,11 +1478,11 @@
      }
 
      .portfolio__arrow_prev {
-         left: -20px;
+         left: 12px;
      }
 
      .portfolio__arrow_next {
-         right: -20px;
+         right: 12px;
      }
 
      .portfolio__pagination-line {
@@ -1814,7 +1881,8 @@
      }
 
      /* Скрываем пагинацию */
-     .portfolio__pagination {
+     .portfolio__pagination,
+     .partners__pagination {
          display: none;
      }
 

@@ -122,25 +122,100 @@
 
 // ===== ИНИЦИАЛИЗАЦИЯ SWIPER ДЛЯ ПОРТФОЛИО =====
 document.addEventListener('DOMContentLoaded', function () {
-    const portfolioSwiper = new Swiper('.portfolio__slider .swiper', {
+    var paginationNumber = document.querySelector('.portfolio .portfolio__pagination-number');
+    var paginationLine = document.querySelector('.portfolio .portfolio__pagination-line');
+
+    function getSlidesPerView(swiper) {
+        var spv = swiper.params.slidesPerView;
+        if (typeof spv !== 'number') {
+            var breakpoint = swiper.currentBreakpoint;
+            if (breakpoint && swiper.params.breakpoints && swiper.params.breakpoints[breakpoint]) {
+                return swiper.params.breakpoints[breakpoint].slidesPerView || 1;
+            }
+            return 1;
+        }
+        return spv;
+    }
+
+    function updatePortfolioPagination(swiper) {
+        if (!paginationNumber || !paginationLine) return;
+
+        var slidesPerView = getSlidesPerView(swiper);
+        var totalPages = Math.ceil(swiper.slides.length / slidesPerView) || 1;
+        var currentPage = Math.ceil((swiper.activeIndex + 1) / slidesPerView) || 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+
+        paginationNumber.textContent = String(currentPage).padStart(2, '0') + '/' + String(totalPages).padStart(2, '0');
+        paginationLine.classList.remove('page-1', 'page-2');
+        paginationLine.classList.add('page-' + Math.min(currentPage, 2));
+    }
+
+    var portfolioSwiper = new Swiper('.portfolio__slider .swiper', {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetween: 20,
         navigation: {
             nextEl: '.portfolio__arrow_next',
             prevEl: '.portfolio__arrow_prev',
         },
-        pagination: {
-            el: '.portfolio__pagination',
-            type: 'fraction',
-        },
         breakpoints: {
             768: {
                 slidesPerView: 2,
+                slidesPerGroup: 2,
                 spaceBetween: 20,
             },
             1024: {
                 slidesPerView: 3,
+                slidesPerGroup: 3,
                 spaceBetween: 24,
+            },
+        },
+        on: {
+            init: function () {
+                updatePortfolioPagination(this);
+            },
+            slideChange: function () {
+                updatePortfolioPagination(this);
+            },
+            resize: function () {
+                updatePortfolioPagination(this);
+            },
+        },
+    });
+
+    var partnersPaginationNumber = document.querySelector('.partners__pagination-number');
+    var partnersPaginationLine = document.querySelector('.partners__pagination-line');
+
+    function updatePartnersPagination(swiper) {
+        if (!partnersPaginationNumber || !partnersPaginationLine) return;
+
+        var slidesPerView = getSlidesPerView(swiper);
+        var totalPages = Math.ceil(swiper.slides.length / slidesPerView) || 1;
+        var currentPage = Math.ceil((swiper.activeIndex + 1) / slidesPerView) || 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+
+        partnersPaginationNumber.textContent = String(currentPage).padStart(2, '0') + '/' + String(totalPages).padStart(2, '0');
+        partnersPaginationLine.classList.remove('page-1', 'page-2', 'page-3');
+        partnersPaginationLine.classList.add('page-' + currentPage);
+    }
+
+    var partnersSwiper = new Swiper('.partners__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.partners__arrow_next',
+            prevEl: '.partners__arrow_prev',
+        },
+        on: {
+            init: function () {
+                updatePartnersPagination(this);
+            },
+            slideChange: function () {
+                updatePartnersPagination(this);
+            },
+            resize: function () {
+                updatePartnersPagination(this);
             },
         },
     });
