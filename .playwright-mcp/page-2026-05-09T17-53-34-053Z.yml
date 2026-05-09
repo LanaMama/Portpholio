@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "BuildWise" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "BuildWise" [ref=e5]
+      - navigation [ref=e6]:
+        - link "Main" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+        - link "Portfolio" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+        - link "Price" [ref=e9] [cursor=pointer]:
+          - /url: "#"
+        - link "Certifications" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+        - link "Contacts" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+      - button "Open menu" [ref=e12]
+      - link "(+44) 7755-555-764" [ref=e13] [cursor=pointer]:
+        - /url: tel:+447755555764
+        - generic [ref=e14]: (+44) 7755-555-764
+        - img [ref=e15]
+    - img [ref=e18]
+    - generic [ref=e21]:
+      - heading "Construction" [level=1] [ref=e22]
+      - paragraph [ref=e23]: From residential renovations to large-scale commercial projects — we bring craftsmanship, reliability, and precision to every build.
+      - link "Request a free quote" [ref=e24] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - heading "About us" [level=2] [ref=e28]
+      - paragraph [ref=e30]: At BuildWise, we believe every project is more than bricks and mortar — it’s a vision brought to life. For over 20 years, we’ve been delivering high-quality construction solutions for homeowners, businesses, and developers.
+      - paragraph [ref=e32]: Our team combines expert craftsmanship, innovative design, and uncompromising safety standards to ensure every build is done right the first time. From initial planning to the final walkthrough, we work closely with our clients, keeping communication clear and expectations aligned.
+      - paragraph [ref=e34]: "Our mission is simple: to build spaces that inspire, serve, and last for generations."
+      - link "More about us" [ref=e35] [cursor=pointer]:
+        - /url: "#"
+    - img "Modern house exterior" [ref=e37]
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - heading "Our portfolio" [level=2] [ref=e40]
+      - paragraph [ref=e41]: From sleek modern homes to large-scale commercial complexes, our projects reflect the skill, precision, and dedication we bring to every build. Each one tells a story of careful planning, expert execution, and lasting quality.
+    - generic [ref=e42]:
+      - button "Previous slide" [disabled] [ref=e43] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e47]:
+        - group "1 / 6" [ref=e48]:
+          - article [ref=e49]:
+            - img "Metro Office Hub" [ref=e50]
+            - generic [ref=e51]:
+              - heading "Metro Office Hub" [level=3] [ref=e52]
+              - paragraph [ref=e53]: Complete office fit-out for a 10,000 sq ft corporate headquarters.
+        - group "2 / 6" [ref=e54]:
+          - article [ref=e55]:
+            - img "Metro Office Hub" [ref=e56]
+            - generic [ref=e57]:
+              - heading "Metro Office Hub" [level=3] [ref=e58]
+              - paragraph [ref=e59]: Complete office fit-out for a 10,000 sq ft corporate headquarters.
+        - group "3 / 6" [ref=e60]:
+          - article [ref=e61]:
+            - img "Metro Office Hub" [ref=e62]
+            - generic [ref=e63]:
+              - heading "Metro Office Hub" [level=3] [ref=e64]
+              - paragraph [ref=e65]: Complete office fit-out for a 10,000 sq ft corporate headquarters.
+        - group "4 / 6" [ref=e66]:
+          - article [ref=e67]:
+            - img "Urban Residential Complex" [ref=e68]
+            - generic [ref=e69]:
+              - heading "Urban Residential Complex" [level=3] [ref=e70]
+              - paragraph [ref=e71]: Modern apartment building with sustainable design features.
+        - group "5 / 6" [ref=e72]:
+          - article [ref=e73]:
+            - img "Commercial Warehouse" [ref=e74]
+            - generic [ref=e75]:
+              - heading "Commercial Warehouse" [level=3] [ref=e76]
+              - paragraph [ref=e77]: Large-scale storage facility with advanced logistics integration.
+        - group "6 / 6" [ref=e78]:
+          - article [ref=e79]:
+            - img "Eco-Friendly Office" [ref=e80]
+            - generic [ref=e81]:
+              - heading "Eco-Friendly Office" [level=3] [ref=e82]
+              - paragraph [ref=e83]: LEED-certified office space with green building technologies.
+      - button "Next slide" [ref=e84] [cursor=pointer]:
+        - img [ref=e85]
+    - generic [ref=e87]:
+      - generic [ref=e89]: 01/02
+      - button "View All Partners" [ref=e93]:
+        - generic [ref=e94]: View All Partners
+        - img [ref=e95]
+  - generic [ref=e98]:
+    - generic [ref=e99]:
+      - heading "Certifications & credentials" [level=2] [ref=e100]
+      - paragraph [ref=e101]: We believe great construction starts with strong foundations — not just in buildings, but in professional standards. Our team holds industry-recognized certifications that ensure your project meets the highest levels of safety, quality, and compliance.
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "Fully Licensed & Insured" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Commitment to quality management in every process.
+          - generic [ref=e107]: "2025"
+        - generic [ref=e108]: Winner
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - heading "ISO 9001:2015 Certified" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Commitment to quality management in every process.
+          - generic [ref=e114]: 2023, 2024, 2025
+        - generic [ref=e115]: Winner
+      - generic [ref=e118]:
+        - heading "OSHA Safety Certified" [level=3] [ref=e119]
+        - paragraph [ref=e120]: Ensuring safe practices on every job site.
+        - generic [ref=e121]: "2025"
+      - generic [ref=e124]:
+        - heading "LEED Accredited Professionals" [level=3] [ref=e125]
+        - paragraph [ref=e126]: Expertise in sustainable, eco-friendly building.
+        - generic [ref=e127]: "2025"
+      - generic [ref=e130]:
+        - heading "Licensed General Contractor" [level=3] [ref=e131]
+        - paragraph [ref=e132]: Recognized by industry leaders.
+        - generic [ref=e133]: "2025"
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - heading "OSHA Safety Trained" [level=3] [ref=e137]
+          - paragraph [ref=e138]: Compliant with all local and national regulations
+          - generic [ref=e139]: 2023, 2024, 2025
+        - generic [ref=e140]: Winner
+    - button "View Full Portfolio" [ref=e142]:
+      - generic [ref=e143]: View Full Portfolio
+      - img [ref=e144]
+  - generic [ref=e146]:
+    - generic [ref=e147]:
+      - heading "Trusted partners" [level=2] [ref=e148]
+      - paragraph [ref=e149]: We believe great construction happens through strong partnerships. Over the years, we’ve teamed up with leading suppliers, architects, and industry organizations to ensure every project gets the best materials, expertise, and technology available.
+    - generic [ref=e150]:
+      - button "Previous slide" [disabled] [ref=e151] [cursor=pointer]:
+        - img [ref=e152]
+      - list [ref=e155]:
+        - group "1 / 3" [ref=e156]:
+          - article [ref=e157]:
+            - generic [ref=e158]:
+              - img "CityPoint Retail Center" [ref=e159]
+              - generic [ref=e160]:
+                - heading "CityPoint Retail Center" [level=3] [ref=e161]
+                - paragraph [ref=e162]: From sleek modern homes to large-scale commercial complexes, our projects reflect the skill, precision, and dedication we bring to every build.
+        - group "2 / 3" [ref=e163]:
+          - article [ref=e164]:
+            - generic [ref=e165]:
+              - img "Harbourview Logistics Hub" [ref=e166]
+              - generic [ref=e167]:
+                - heading "Harbourview Logistics Hub" [level=3] [ref=e168]
+                - paragraph [ref=e169]: A major logistics facility designed for efficient supply chain operations and modern distribution.
+        - group "3 / 3" [ref=e170]:
+          - article [ref=e171]:
+            - generic [ref=e172]:
+              - img "Greenfield Industrial Campus" [ref=e173]
+              - generic [ref=e174]:
+                - heading "Greenfield Industrial Campus" [level=3] [ref=e175]
+                - paragraph [ref=e176]: Sustainable industrial campus with smart systems and advanced safety engineering.
+      - button "Next slide" [ref=e177] [cursor=pointer]:
+        - img [ref=e178]
+    - generic [ref=e180]:
+      - generic [ref=e182]: 01/03
+      - link "View Full Portfolio" [ref=e187] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e188]: View Full Portfolio
+        - img [ref=e189]
+  - generic [ref=e192]:
+    - heading "Frequently asked questions" [level=2] [ref=e194]
+    - generic [ref=e195]:
+      - generic [ref=e196]:
+        - generic [ref=e197] [cursor=pointer]:
+          - generic [ref=e198]: What types of construction projects do you handle?
+          - img [ref=e199]
+        - paragraph [ref=e201]: We handle a wide range of projects including residential renovations, commercial buildings, industrial facilities, and custom-built homes from the ground up.
+      - generic [ref=e202]:
+        - generic [ref=e203] [cursor=pointer]:
+          - generic [ref=e204]: How long will my project take?
+          - img [ref=e205]
+        - paragraph [ref=e207]: Project timelines vary depending on scope and complexity. We'll provide a detailed schedule after our initial consultation and keep you updated at every stage of the build.
+      - generic [ref=e208]:
+        - generic [ref=e209] [cursor=pointer]:
+          - generic [ref=e210]: Do you provide cost estimates before starting?
+          - img [ref=e211]
+        - paragraph [ref=e213]: Yes, we provide transparent and comprehensive cost estimates before any work begins, ensuring there are no hidden fees or unexpected costs during the project.
+      - generic [ref=e214]:
+        - generic [ref=e215] [cursor=pointer]:
+          - generic [ref=e216]: Are you licensed and insured?
+          - img [ref=e217]
+        - paragraph [ref=e219]: Absolutely. BuildWise is fully licensed and insured, meeting all local and national safety standards to protect both our workers and your property.
+      - generic [ref=e220]:
+        - generic [ref=e221] [cursor=pointer]:
+          - generic [ref=e222]: Can you work with my own architect or designer?
+          - img [ref=e223]
+        - paragraph [ref=e225]: We are happy to collaborate with your chosen architect or interior designer to ensure that every technical and aesthetic detail matches your vision perfectly.
+      - generic [ref=e226]:
+        - generic [ref=e227] [cursor=pointer]:
+          - generic [ref=e228]: Do you offer eco-friendly building options?
+          - img [ref=e229]
+        - paragraph [ref=e231]: Yes, we specialize in sustainable construction, offering energy-efficient materials, solar-ready designs, and eco-friendly waste management solutions.
+  - generic [ref=e233]:
+    - generic [ref=e234]:
+      - heading "Start your project today!" [level=2] [ref=e235]
+      - paragraph [ref=e236]: Tell us about your construction needs, and our team will get back to you with a detailed proposal.
+      - paragraph [ref=e237]: Once we receive your application, one of our project managers will contact you within 24 hours to discuss your goals, budget, and next steps.
+      - generic [ref=e238]:
+        - textbox "Phone Number" [ref=e239]
+        - button "Submit" [ref=e240] [cursor=pointer]
+      - paragraph [ref=e241]: By clicking on the button, you agree to the privacy policy and give consent to the processing of your personal data.
+    - img "Construction" [ref=e243]
+  - contentinfo [ref=e244]:
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - link "BuildWise" [ref=e247] [cursor=pointer]:
+          - /url: "#"
+          - img "BuildWise" [ref=e248]
+        - generic [ref=e249]: 2023 Company
+        - generic [ref=e250]:
+          - img [ref=e251]
+          - img [ref=e254]
+          - img [ref=e257]
+          - img [ref=e259]
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - link "Main" [ref=e263] [cursor=pointer]:
+            - /url: "#"
+          - link "Portfolio" [ref=e264] [cursor=pointer]:
+            - /url: "#"
+          - link "Price" [ref=e265] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e266]:
+          - link "Certifications" [ref=e267] [cursor=pointer]:
+            - /url: "#"
+          - link "Contacts" [ref=e268] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e269]:
+        - heading "Tell us about your construction needs" [level=2] [ref=e270]
+        - paragraph [ref=e271]: Once we receive your application, one of our project managers will contact you within 24 hours to discuss your goals, budget, and next steps.
+        - generic [ref=e272]:
+          - textbox "Phone Number" [ref=e273]
+          - button "Submit" [ref=e274] [cursor=pointer]

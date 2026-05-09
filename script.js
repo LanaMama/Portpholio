@@ -122,6 +122,8 @@
 
 // ===== ИНИЦИАЛИЗАЦИЯ SWIPER ДЛЯ ПОРТФОЛИО =====
 document.addEventListener('DOMContentLoaded', function () {
+    if (typeof Swiper === 'undefined') return;
+
     var paginationNumber = document.querySelector('.portfolio .portfolio__pagination-number');
     var paginationLine = document.querySelector('.portfolio .portfolio__pagination-line');
 
@@ -153,7 +155,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var portfolioSwiper = new Swiper('.portfolio__slider .swiper', {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 20,
+        spaceBetween: 16,
+        centeredSlides: false,
+        watchOverflow: true,
         navigation: {
             nextEl: '.portfolio__arrow_next',
             prevEl: '.portfolio__arrow_prev',
@@ -199,13 +203,27 @@ document.addEventListener('DOMContentLoaded', function () {
         partnersPaginationLine.classList.add('page-' + currentPage);
     }
 
-    var partnersSwiper = new Swiper('.partners__swiper', {
+    new Swiper('.partners__swiper', {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 20,
+        spaceBetween: 16,
+        centeredSlides: false,
+        watchOverflow: true,
         navigation: {
             nextEl: '.partners__arrow_next',
             prevEl: '.partners__arrow_prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 24,
+            },
         },
         on: {
             init: function () {
@@ -220,4 +238,3 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
-
