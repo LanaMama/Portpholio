@@ -19,7 +19,8 @@ When implementing complex features or significant refactoring, use an ExecPlan (
 5. Import all icons as `.svg`.
 6. For images, use `<picture>` or `srcset` for retina screens (x2).
 
-## Dora (refinement) mode
+## Dora (refinement rules) mode
+- Don't rewrite everything from scratch.
 - Always inspect existing code before changing.
 - Use `codex "describe file <path>"` to get a summary.
 - Prefer editing specific lines: `codex "in <file> at lines <start>-<end> replace ..."`
